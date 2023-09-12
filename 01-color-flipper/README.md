@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Color Flipper** is a personal project that creates an interactive web page to add random colors to the body of the webpage with a click of a button. This project consists of two webpages, each offering a unique way to apply colors:
+**Color Flipper** is an interactive web page that adds random colors to the body of the webpage with a click of a button. This project consists of two webpages, each offering a unique way to apply colors:
 
 1. **Simple Page**: This webpage allows you to apply colors to the webpage's body using color names such as "aqua," "red", "maroon" and more.
 

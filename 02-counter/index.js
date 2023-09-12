@@ -22,4 +22,5 @@ function counter(e) {
   } else {
     p.style.color = "#1d3557";
   }
+  e.preventDefault();
 }

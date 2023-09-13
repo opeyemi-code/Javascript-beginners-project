@@ -1,10 +1,11 @@
 const p = document.querySelector(".count");
 const btns = document.querySelectorAll(".btn");
-let count = p.textContent;
 
 btns.forEach((btn) => btn.addEventListener("click", counter));
 
 function counter(e) {
+  var count = p.textContent;
+
   if (e.currentTarget.classList.contains("increase__btn")) {
     ++count;
   } else if (e.currentTarget.classList.contains("decrease__btn")) {
@@ -14,6 +15,7 @@ function counter(e) {
   }
 
   p.textContent = count;
+  localStorage.setItem("key", count);
 
   if (Number(count) > 0) {
     p.style.color = "green";
@@ -24,3 +26,5 @@ function counter(e) {
   }
   e.preventDefault();
 }
+
+p.textContent = localStorage.getItem("key");

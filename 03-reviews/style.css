@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b6dff2;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  margin: 50px 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 40px 0;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+h1::before {
+  content: " ";
+  width: 80px;
+  height: 5px;
+  background-color: #3691a8;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 25px;
+  left: 42%;
+}
+
+.card {
+  width: 85vw;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.thumbnail-container {
+  position: relative;
+}
+
+.thumbnail {
+  border-radius: 50%;
+  background-color: #3691a8;
+  margin-bottom: 20px;
+}
+
+.thumbnail img {
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  object-fit: cover;
+  position: relative;
+  top: 5px;
+  right: 8px;
+}
+
+.quote-icon {
+  background-color: #3691a8;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  font-size: 20px;
+}
+
+h2 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #83c8e9;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+p {
+  line-height: 1.5;
+  text-align: center;
+  color: #053a55d5;
+  font-size: 15px;
+}
+
+.angles {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+
+.angles i {
+  font-size: 25px;
+  color: #589daf;
+}
+
+.angles i:hover {
+  color: #0c7892;
+  cursor: pointer;
+}
+.left-angle {
+  margin-right: 10px;
+}
+
+.right-angle {
+  margin-left: 10px;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-color: #3691a8 black black #3691a8;
+  color: #3691a8;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3691a8;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (min-width: 400px) {
+  h1::before {
+    left: 47%;
+  }
+
+  .card {
+    width: 50vw;
+  }
+}
